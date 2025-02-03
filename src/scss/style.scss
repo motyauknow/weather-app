@@ -1,0 +1,129 @@
+@import 'variables.scss';
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: $body-color;
+    font-family: Montserrat, sans-serif;
+}
+
+.weather-info {
+    background-color: white;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+// --Header для основной карточки--
+
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 5px;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+
+    border-bottom: 1px solid black;
+}
+
+.current-title {
+    font-weight: 400;
+}
+//////////////////
+
+.left-panel {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.temp {
+    font-size: 64px;
+    margin: 12px;
+}
+
+.unit {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.feels-temp {
+    margin-left: 12px;
+    padding-right: 12px;
+}
+
+.description-container {
+    grid-area: 3;
+    padding-left: 12px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/// 
+
+.panels-container {
+    display: flex;
+}
+
+////////////
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.humidity-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 5px;
+    margin: 10px;
+    border-bottom: 1px solid black;
+} 
+
+.wind-speed-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 5px;
+    margin: 10px;
+    border-bottom: 1px solid black;
+} 
+
+.wind-gust-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 5px;
+    margin: 10px;
+    border-bottom: 1px solid black;
+} 
+
+.title {
+    font-weight: 400;
+}
+
+.value {
+    font-weight: 700;
+}
+/////////////////////
+.city-selector {
+    padding-top: 20px;
+
+}
+
+.city-input {
+    width: 632px;
+    height: 32px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid black;
+}
+
+///////////
+#app {
+    display: block;
+    margin: auto;
+    margin-top: 16px;
+    width: 632px;
+}

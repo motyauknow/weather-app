@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="weather-info">
+        <div class="info-header">
+          <h2 class="current-title">CURRENT WEATHER</h2>
+          <h2 id="current-time">10:00</h2>
+        </div>
+        <div class="panels-container">
+          <div class="left-panel">
+            <!--Здесь svgшка для погоды, облачки всякие и такое-->
+            <img src="" alt="lol" id="weather-img">
+            <div class="temp-container">
+            <!--Температура, значок градусов, и ощущение температуры-->
+            </div>
+            <div class="description-container">
+
+            </div>
+          </div>
+
+          <div class="right-panel">
+            <div class="humidity-container">
+
+            </div>
+            <div class="wind-speed-container">
+
+            </div>
+            <div class="wind-gust-container">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="city-selector">
+        <select name="city" class="city-input">
+          <option value="moscow">Moscow</option>
+          <option value="peter">Saint Petersburg</option>
+          <option value="ivanovo">Ivanovo</option>
+          <option value="kazan">Kazan</option>
+        </select>
+      </div>
+    </div>
+    <script type="module" src="src/js/main.js"></script>
+  </body>
+</html>
